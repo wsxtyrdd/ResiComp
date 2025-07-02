@@ -479,8 +479,8 @@ def main(argv):
         logger.info("No pretrained model is loaded.")
 
     if config.test_only:
-        # rd_test(net, test_loader, device, logger)
-        # progressive_test(net, test_loader, device, logger)
+        rd_test(net, test_loader, device, logger)
+        progressive_test(net, test_loader, device, logger)
         packet_loss_test(net, test_loader, device, logger)
     else:
         steps_epoch = global_step // train_loader.__len__()

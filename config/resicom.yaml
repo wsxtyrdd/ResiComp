@@ -4,15 +4,10 @@ test-only: True
 
 batch-size: 8
 eval-dataset-path: '/media/Dataset/kodak'
-#eval-dataset-path: '/media/Dataset/HR_Image_dataset/clic2020/valid'
-#eval-dataset-path: '/media/D/wangsixian/MT/screen_content'
 num-workers: 10
 training-img-size: (384, 384)
 
-# mse
-#checkpoint: '/media/D/wangsixian/MT/checkpoint/MT 0.0035/checkpoint_best_loss.pth.tar'
-
-# 0.1 0035
+# e.g., 0.1 0035
 checkpoint: './checkpoint/ResiComp_alpha=0.1_lambda_0.0017.pth.tar'
 
 init_lr: 1e-4
